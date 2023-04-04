@@ -5,7 +5,6 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import telas.LoginTela;
-
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.concurrent.TimeUnit;
@@ -29,8 +28,6 @@ public class ProdutoTest {
     @DisplayName("Não é permitido registrar produtos com valor igual a zero")
     @Test
     public void testValidacaoDoValorDeProdutoNaoPermitidoIgualAZero(){
-
-
         String mensagemApresentada = new LoginTela(app)
                 .informarOUsuario("admin")
                 .informarASenha("admin")
@@ -49,8 +46,6 @@ public class ProdutoTest {
     @DisplayName("Não é permitido registrar produtos com valor maior que sete mil")
     @Test
     public void testValidacaoDoValorDeProdutoNaoPermitidoMaiorQueSeteMil(){
-
-
         String mensagemApresentada = new LoginTela(app)
                 .informarOUsuario("admin")
                 .informarASenha("admin")
@@ -69,7 +64,6 @@ public class ProdutoTest {
     @DisplayName("é permitido registrar produtos com valor igual a um centavo")
     @Test
     public void testValidacaoDoValorDeProdutoPermitidoIgualAUmCentavo(){
-
         String mensagemApresentada = new LoginTela(app)
                 .informarOUsuario("admin")
                 .informarASenha("admin")
@@ -88,7 +82,6 @@ public class ProdutoTest {
     @DisplayName("é permitido registrar produtos com valor igual a sete mil")
     @Test
     public void testValidacaoDoValorDeProdutoPermitidoIgualASeteMil(){
-
         String mensagemApresentada = new LoginTela(app)
                 .informarOUsuario("admin")
                 .informarASenha("admin")
